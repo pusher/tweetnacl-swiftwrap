@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/pusher/tweetnacl-swiftwrap.git", :tag => s.version.to_s }
   s.source_files = 'Sources/TweetNacl/*.swift', 'Sources/CTweetNacl/**/*.{h,c}'
   s.public_header_files = 'Sources/CTweetNacl/include/*.h'
-  s.module_map = 'Sources/module.map'
+  s.module_map = 'Sources/module.modulemap'
   s.frameworks = "Foundation"
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/Sources'
