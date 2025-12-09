@@ -14,8 +14,11 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "13.0"
   s.source       = { :git => "https://github.com/pusher/tweetnacl-swiftwrap.git", :tag => s.version.to_s }
   s.source_files  = "Sources/**/*.{h,c,swift}"
-  s.private_header_files = 'Sources/CTweetNacl/include/*.h'
-  s.preserve_paths = 'Sources/module.map'
+  s.public_header_files = 'Sources/CTweetNacl/include/*.h'
+  s.preserve_paths = 'Sources/module.modulemap'
   s.frameworks  = "Foundation"
-  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/PusherTweetNacl/Sources' }
+  s.pod_target_xcconfig = {
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/Sources',
+    'HEADER_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/Sources/CTweetNacl/include'
+  }
 end
