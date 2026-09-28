@@ -4,9 +4,11 @@
 [![Build Status](https://travis-ci.org/bitmark-inc/tweetnacl-swiftwrap.svg?branch=master)](https://travis-ci.org/bitmark-inc/tweetnacl-swiftwrap) [![codecov](https://codecov.io/gh/bitmark-inc/tweetnacl-swiftwrap/branch/master/graph/badge.svg)](https://codecov.io/gh/bitmark-inc/tweetnacl-swiftwrap)
 
 ## Requirements
-- iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 9.0+
-- Swift 4.0+
+- iOS 15.0+ / macOS 12.0+ / tvOS 15.0+
+- Xcode 13.0+
+- Swift 5.0+
+
+If you need support for older versions of iOS, macOS or tvOS, please use the latest 1.x release of this fork.
 
 ## Installation
 
@@ -23,11 +25,11 @@ To integrate TweetNacl into your Xcode project using CocoaPods, specify it in yo
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'TweetNacl', '~> 1.0.0'
+    pod 'TweetNacl', '~> 2.0.0'
 end
 ```
 
