@@ -8,7 +8,7 @@
 - Xcode 13.0+
 - Swift 5.0+
 
-If you need support for older versions of iOS, macOS or tvOS, please use the latest 1.x release of this fork.
+If you need support for older versions of iOS, macOS or tvOS, please pin to `1.2.0` or earlier.
 
 ## Installation
 
@@ -29,7 +29,7 @@ platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'TweetNacl', '~> 2.0.0'
+    pod 'TweetNacl', '~> 1.3.0'
 end
 ```
 

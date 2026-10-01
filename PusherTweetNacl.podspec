@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PusherTweetNacl"
-  s.version      = "2.0.0"
+  s.version      = "1.3.0"
   s.summary      = "TweetNacl wrapper library written in Swift."
   s.description  = <<-DESC
     A Swift wrapper for TweetNacl C library (Pusher fork with updated deployment targets)
